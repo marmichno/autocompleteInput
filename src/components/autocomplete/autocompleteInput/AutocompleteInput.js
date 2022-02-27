@@ -12,9 +12,10 @@ import { handleKeyDown, handleChange } from './autocompleteInput.utils';
 // styles
 import './autocompleteInputStyles.css';
 
-export const AutocompleteInput = ({ users }) => {
+export const AutocompleteInput = () => {
   const dispatch = useDispatch();
   const autoComplete = useSelector((state) => state.usersAutocomplete);
+  const users = useSelector((state) => state.users.users);
   const [userInput, setUserInput] = useState('');
   const [index, setIndex] = useState(0);
 

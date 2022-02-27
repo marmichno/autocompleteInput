@@ -28,9 +28,7 @@ export const AutocompleteContainer = () => {
     <div onClick={closeAutocomplete} className="mainContainer">
       {usersState.loading && <h2>Loading...</h2>}
       {usersState.error && <h2>Something went wrong</h2>}
-      {usersState.users.length > 0 && (
-        <AutocompleteInput users={usersState.users} />
-      )}
+      {usersState.users.length > 0 && <AutocompleteInput />}
     </div>
   );
 };
