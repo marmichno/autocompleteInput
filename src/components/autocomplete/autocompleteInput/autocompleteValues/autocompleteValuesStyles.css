@@ -1,0 +1,32 @@
+.valuesContainer {
+    min-width:300px;
+    max-height: 400px;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.valuesContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.valuesContainer .value {
+    width:100%;
+    border: 1px solid rgba(128, 128, 128, 0.303);
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding:1em;
+}
+
+.value:hover{
+    background-color:#E9E9E9;
+    cursor:pointer;
+}

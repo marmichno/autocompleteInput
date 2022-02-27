@@ -1,0 +1,3 @@
+export const FILTER_USERS = 'FILTER_USERS';
+export const SELECT_VALUE = 'SELECT_VALUE';
+export const SHOW_AUTOCOMPLETE = 'SHOW_AUTOCOMPLETE';

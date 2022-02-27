@@ -1,0 +1,42 @@
+.autocompleteInputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: visible;
+  position: relative;
+}
+
+input {
+  min-width:300px;
+  text-align: center;
+  height: 40px;
+  background-color:#F1F1F1;
+  border:none;
+}
+
+.searchedOptions {
+  position: absolute;
+  min-width:250px;
+  text-align: center;
+  background-color: white;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btnSubmit{
+  height:40px;
+  margin-left:1em;
+  min-width:80px;
+  background-color: #1E90FF;
+  border:none;
+  color:white;
+}
+
+.btnSubmit:hover{
+  background-color:#0080FF;
+  cursor:pointer;
+}
